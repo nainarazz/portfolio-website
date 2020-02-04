@@ -2,10 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { createGlobalStyle } from 'styled-components';
 import { StyledMain } from './layout.style';
+import { themeColor } from '../../themes/colors';
 
 const GlobalStyle = createGlobalStyle`
     body {
-        background-color: #222629;
+        background-color: ${themeColor.darkGray};
+        color: #fff;
     }
 `;
 
