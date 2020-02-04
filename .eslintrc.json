@@ -3,7 +3,9 @@
     "plugins": ["prettier"],
     "rules": {
         "prettier/prettier": ["error"],
+        "import/prefer-default-export": 0,
         "react/jsx-props-no-spreading": "off",
-        "react/jsx-indent": "off"
+        "react/jsx-indent": "off",
+        "react/destructuring-assignment": "off"
     }
 }
