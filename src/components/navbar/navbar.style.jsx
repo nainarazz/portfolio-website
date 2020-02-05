@@ -6,8 +6,11 @@ export const Container = styled.div`
     z-index: 400;
     background-color: ${themeColor.darkGray};
     width: 100%;
-    height: 130px;
+    height: 100px;
     display: flex;
+    box-shadow: ${props => (props.shouldShowShadow ? '0 9px 9px -9px rgba(0, 0, 0, 1.13)' : '')};
+    transition: top 0.3s;
+    top: ${props => (props.shouldHideHeader ? '-100px' : 0)};
     align-items: center;
 `;
 
@@ -20,14 +23,15 @@ export const Nav = styled.div`
 
 export const Logo = styled.div`
     padding: 10px;
+    font-size: 1.2rem;
 `;
 
 export const MenuItems = styled.div`
     display: flex;
-    width: 30%;
     justify-content: space-between;
 `;
 
 export const Item = styled.div`
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    padding: 10px;
 `;
