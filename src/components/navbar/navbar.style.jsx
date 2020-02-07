@@ -27,8 +27,12 @@ export const Logo = styled.div`
 `;
 
 export const MenuItems = styled.div`
-    display: flex;
     justify-content: space-between;
+    display: none;
+
+    @media (min-width: 768px) {
+        display: flex;
+    }
 `;
 
 export const Item = styled.div`
