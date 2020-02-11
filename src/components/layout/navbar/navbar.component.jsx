@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Container, MenuItems, Item, Logo, Nav } from './navbar.style';
-import useDocumentScrollThrottled from '../../utilities/useDocumentScrollThrottled';
-import Burger from '../burger/burger.component';
-import { SideDrawer } from '../side-drawer/side-drawer.component';
+import useDocumentScrollThrottled from '../../../utilities/useDocumentScrollThrottled';
+import { SideDrawer } from '../../side-drawer/side-drawer.component';
+import Burger from '../../burger/burger.component';
 
 export const NavBar = () => {
     const [shouldHideHeader, setShouldHideHeader] = useState(false);

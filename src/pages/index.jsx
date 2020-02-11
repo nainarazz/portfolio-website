@@ -1,20 +1,26 @@
 import React from 'react';
-import Layout from '../components/layout/layout.component';
+import styled from 'styled-components';
+import MainContent from '../components/layout/main-content/main-content.component';
 import { Hero } from '../components/sections/hero/hero.component';
-import { NavBar } from '../components/navbar/navbar.component';
+import { themeColor } from '../themes/colors';
+import { NavBar } from '../components/layout/navbar/navbar.component';
+import { Footer } from '../components/layout/footer/footer.component';
+
+const StyledHeading = styled.h2`
+    color: ${themeColor.darkAccent};
+    text-align: center;
+    font-size: 2rem;
+`;
 
 function HomePage() {
     return (
         <>
             <NavBar />
             <Hero />
-            <Layout>
-                <div>About component</div>
-                <div>Work experience component</div>
-                <div>Projects component</div>
-                <div>contact component</div>
-                <div>contact component</div>
-            </Layout>
+            <MainContent>
+                <StyledHeading>Blog Posts</StyledHeading>
+            </MainContent>
+            <Footer />
         </>
     );
 }

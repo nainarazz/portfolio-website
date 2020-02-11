@@ -1,18 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StyledMain } from './layout.style';
+import { StyledMain } from './main-content.style';
 
-const Layout = props => {
+const MainContent = props => {
     return (
         <>
             <StyledMain>{props.children}</StyledMain>
-            /**footer here */
         </>
     );
 };
 
-Layout.propTypes = {
+MainContent.propTypes = {
     children: PropTypes.node.isRequired,
 };
 
-export default Layout;
+export default MainContent;
