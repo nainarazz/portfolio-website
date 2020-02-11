@@ -4,7 +4,7 @@ import { themeColor } from '../../themes/colors';
 export const Container = styled.div`
     position: fixed;
     z-index: 400;
-    background-color: ${themeColor.darkGray};
+    background-color: ${themeColor.mainBrand};
     width: 100%;
     height: 100px;
     display: flex;
@@ -19,6 +19,7 @@ export const Nav = styled.div`
     justify-content: space-between;
     padding: 0 3rem;
     width: 100%;
+    color: #fff;
 `;
 
 export const Logo = styled.div`

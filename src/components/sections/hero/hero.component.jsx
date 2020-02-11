@@ -1,0 +1,18 @@
+import React from 'react';
+import { HeaderColor, Content, Intro, Photo } from './hero.style';
+
+export const Hero = () => {
+    return (
+        <>
+            <HeaderColor>
+                <Content>
+                    <Intro>
+                        Hi, my name is Naina Razafindrabiby. I help people solve problems through
+                        software.
+                    </Intro>
+                    <Photo />
+                </Content>
+            </HeaderColor>
+        </>
+    );
+};
