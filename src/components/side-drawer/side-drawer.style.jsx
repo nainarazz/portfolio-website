@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import { themeColor } from '../../themes/colors';
 
 export const Container = styled.div`
     height: 100vh;
-    background: #fff;
+    background: ${themeColor.mainBrand};
     box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
     position: fixed;
     padding-top: 82px;
@@ -15,10 +16,10 @@ export const Container = styled.div`
 `;
 
 export const SideDrawerItem = styled.div`
-    font-size: 0.9rem;
-    color: black;
     button {
         border: 0;
+        color: #fff;
+        font-size: 1.2rem;
         background: none;
         width: 100%;
         height: 50px;
@@ -26,11 +27,11 @@ export const SideDrawerItem = styled.div`
 
     button:hover {
         cursor: pointer;
+        color: #fff;
     }
 
     :hover {
-        background-color: #5cb818;
-        color: #fff;
+        background-color: ${themeColor.darkAccent};
         cursor: pointer;
     }
 `;

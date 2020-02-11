@@ -1,7 +1,7 @@
 export const themeColor = {
-    darkGray: '#222629',
-    gray: '#474B4F',
-    lightGray: '#6B6E70',
-    darkGreen: '#61892F',
-    brightGreen: '#86C232',
+    mainBrand: '#8700BE',
+    lightShade: '#E8E0E3',
+    lightAccent: '#8785AA',
+    darkAccent: '#62608E',
+    darkShade: '#141220',
 };
