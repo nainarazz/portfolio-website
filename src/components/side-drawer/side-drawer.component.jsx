@@ -8,16 +8,16 @@ export const SideDrawer = props => {
         <>
             <Container isOpen={props.isOpen}>
                 <SideDrawerItem>
-                    <Link href="#about">
+                    <Link href="/">
                         <button onClick={props.toggleSideDrawer} type="button">
-                            About
+                            Home
                         </button>
                     </Link>
                 </SideDrawerItem>
                 <SideDrawerItem>
-                    <Link href="#work-experience">
+                    <Link href="/about">
                         <button onClick={props.toggleSideDrawer} type="button">
-                            Work Experience
+                            About
                         </button>
                     </Link>
                 </SideDrawerItem>
@@ -38,7 +38,7 @@ export const SideDrawer = props => {
                 <SideDrawerItem>
                     <Link href="#resume">
                         <button onClick={props.toggleSideDrawer} type="button">
-                            Resume
+                            Resumé
                         </button>
                     </Link>
                 </SideDrawerItem>

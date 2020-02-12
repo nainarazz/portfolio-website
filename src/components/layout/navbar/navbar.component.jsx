@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { Container, MenuItems, Item, Logo, Nav } from './navbar.style';
 import useDocumentScrollThrottled from '../../../utilities/useDocumentScrollThrottled';
 import { SideDrawer } from '../../side-drawer/side-drawer.component';
@@ -30,13 +31,22 @@ export const NavBar = () => {
         <>
             <Container shouldShowShadow={shouldShowShadow} shouldHideHeader={shouldHideHeader}>
                 <Nav>
-                    <Logo>NR</Logo>
+                    <Link href="/">
+                        <Logo>NR</Logo>
+                    </Link>
                     <MenuItems>
-                        <Item>About</Item>
-                        <Item>Experience</Item>
-                        <Item>Projects</Item>
-                        <Item>Blog</Item>
-                        <Item>Contact</Item>
+                        <Link href="/about">
+                            <Item>About</Item>
+                        </Link>
+                        <Link href="/project">
+                            <Item>Projects</Item>
+                        </Link>
+                        <Link href="/blog">
+                            <Item>Blog</Item>
+                        </Link>
+                        <Link href="/resume">
+                            <Item>Resumé</Item>
+                        </Link>
                     </MenuItems>
                     <Burger toggleSideDrawer={toggleSideDrawer} isOpen={sideDrawerOpen} />
                     <SideDrawer isOpen={sideDrawerOpen} toggleSideDrawer={toggleSideDrawer} />
