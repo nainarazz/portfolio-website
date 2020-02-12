@@ -20,11 +20,16 @@ export const Nav = styled.div`
     padding: 0 3rem;
     width: 100%;
     color: #fff;
+    max-width: 950px;
+    margin: auto;
 `;
 
 export const Logo = styled.div`
     padding: 10px;
     font-size: 1.2rem;
+    &:hover {
+        cursor: pointer;
+    }
 `;
 
 export const MenuItems = styled.div`
@@ -39,4 +44,7 @@ export const MenuItems = styled.div`
 export const Item = styled.div`
     font-size: 1.2rem;
     padding: 10px;
+    &:hover {
+        cursor: pointer;
+    }
 `;
