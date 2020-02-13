@@ -7,4 +7,5 @@ export const StyledFooter = styled.div`
     width: 100%;
     height: 60px;
     background-color: ${themeColor.mainBrand};
+    background: linear-gradient(to right, ${themeColor.darkShade}, ${themeColor.mainBrand});
 `;

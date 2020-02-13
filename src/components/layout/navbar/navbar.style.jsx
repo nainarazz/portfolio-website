@@ -5,10 +5,11 @@ export const Container = styled.div`
     position: fixed;
     z-index: 400;
     background-color: ${themeColor.mainBrand};
+    background: linear-gradient(to right, ${themeColor.darkShade}, ${themeColor.mainBrand});
     width: 100%;
     height: 100px;
     display: flex;
-    box-shadow: ${props => (props.shouldShowShadow ? '0 9px 9px -9px rgba(0, 0, 0, 1.13)' : '')};
+    box-shadow: ${props => (props.shouldShowShadow ? '0 9px 9px -9px rgba(0, 0, 0, 0.5)' : '')};
     transition: top 0.3s;
     top: ${props => (props.shouldHideHeader ? '-100px' : 0)};
     align-items: center;
@@ -46,5 +47,6 @@ export const Item = styled.div`
     padding: 10px;
     &:hover {
         cursor: pointer;
+        border-bottom: 3px solid ${themeColor.lightShade};
     }
 `;

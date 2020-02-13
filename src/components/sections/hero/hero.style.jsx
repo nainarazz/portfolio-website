@@ -3,6 +3,7 @@ import { themeColor } from '../../../themes/colors';
 
 export const HeaderColor = styled.div`
     background-color: ${themeColor.mainBrand};
+    background: linear-gradient(to right, ${themeColor.darkShade}, ${themeColor.mainBrand});
     color: #fff;
     padding: 120px 2rem 2rem;
 `;
@@ -24,8 +25,8 @@ export const Intro = styled.h1`
     line-height: 1.5;
 `;
 
-export const Photo = styled.div`
-    border: 1px solid;
-    width: 400px;
+export const Photo = styled.img`
+    width: 200px;
     height: 200px;
+    border-radius: 50%;
 `;

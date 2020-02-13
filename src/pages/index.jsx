@@ -10,7 +10,7 @@ import { Footer } from '../components/layout/footer/footer.component';
 import { HorizontalCard } from '../components/horizontal-card/horizontal-card.component';
 
 const StyledHeading = styled.h2`
-    color: ${themeColor.darkAccent};
+    color: ${themeColor.darkShade};
     text-align: center;
     font-size: 2rem;
 `;
