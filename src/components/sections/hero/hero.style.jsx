@@ -21,8 +21,62 @@ export const Content = styled.div`
     }
 `;
 
-export const Intro = styled.h1`
+export const Intro = styled.div`
     line-height: 1.5;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+
+    h1 {
+        margin: 0;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+    h2 {
+        margin: 0;
+        color: ${themeColor.lightShade};
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        margin: 0;
+        color: ${themeColor.lightAccent};
+        font-size: 1.1rem;
+    }
+
+    @media (min-width: 380px) {
+        h1 {
+            font-size: 1.7rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+        }
+    }
+
+    @media (min-width: 480px) {
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (min-width: 968px) {
+        text-align: left;
+        margin-right: 15%;
+    }
 `;
 
 export const Photo = styled.img`

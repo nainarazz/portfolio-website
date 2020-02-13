@@ -7,7 +7,9 @@ export const Hero = () => {
             <HeaderColor>
                 <Content>
                     <Intro>
-                        Hi, my name is Naina Razafindrabiby. I help people solve problems with code.
+                        <h3>Hi, my name is</h3>
+                        <h1>Naina Razafindrabiby.</h1>
+                        <h2>I build stuff for the web.</h2>
                     </Intro>
                     <Photo src="/static/images/profile-pic.jpg" />
                 </Content>
