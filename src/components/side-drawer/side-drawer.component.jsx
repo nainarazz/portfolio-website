@@ -22,7 +22,7 @@ export const SideDrawer = props => {
                     </Link>
                 </SideDrawerItem>
                 <SideDrawerItem>
-                    <Link href="#project">
+                    <Link href="/project">
                         <button onClick={props.toggleSideDrawer} type="button">
                             Projects
                         </button>
@@ -36,7 +36,7 @@ export const SideDrawer = props => {
                     </Link>
                 </SideDrawerItem>
                 <SideDrawerItem>
-                    <Link href="#resume">
+                    <Link href="/resume">
                         <button onClick={props.toggleSideDrawer} type="button">
                             Resumé
                         </button>
