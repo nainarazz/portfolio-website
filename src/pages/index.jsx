@@ -30,11 +30,30 @@ function HomePage() {
             <Hero />
             <MainContent>
                 <StyledHeading>Blog Posts</StyledHeading>
-                <HorizontalCard />
-                <HorizontalCard />
-                <HorizontalCard />
-                <HorizontalCard />
-                <HorizontalCard />
+                <HorizontalCard
+                    date={new Date().toDateString()}
+                    title="What is this keyword in JavaScript?"
+                    photoUrl=""
+                    description="Here you add some description about your projects or posts"
+                />
+                <HorizontalCard
+                    date={new Date().toDateString()}
+                    title="What is this keyword in JavaScript?"
+                    photoUrl=""
+                    description="Here you add some description about your projects or posts"
+                />
+                <HorizontalCard
+                    date={new Date().toDateString()}
+                    title="What is this keyword in JavaScript?"
+                    photoUrl=""
+                    description="Here you add some description about your projects or posts"
+                />
+                <HorizontalCard
+                    date={new Date().toDateString()}
+                    title="What is this keyword in JavaScript?"
+                    photoUrl=""
+                    description="Here you add some description about your projects or posts"
+                />
                 <Link href="/blog">
                     <StyledLink>View all posts</StyledLink>
                 </Link>

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
     CardContainer,
     CardPhoto,
@@ -7,24 +8,26 @@ import {
     CardDescription,
 } from './horizontal-card.style';
 
-export const HorizontalCard = () => {
+export const HorizontalCard = props => {
     return (
         <>
             <CardContainer>
-                <CardPhoto>photo here</CardPhoto>
+                <CardPhoto>{props.photoUrl}</CardPhoto>
                 <Content>
                     <CardTitle>
-                        <h3>What is this in JavaScript?</h3>
-                        <div className="date">February 11, 2020</div>
+                        <h3>{props.title}</h3>
+                        <div className="date">{props.date}</div>
                     </CardTitle>
-                    <CardDescription>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.
-                    </CardDescription>
+                    <CardDescription>{props.description}</CardDescription>
                 </Content>
             </CardContainer>
         </>
     );
+};
+
+HorizontalCard.propTypes = {
+    photoUrl: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
 };

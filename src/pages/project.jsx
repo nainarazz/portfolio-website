@@ -66,11 +66,30 @@ function ProjectPage() {
                 </div>
             </ProjectIntroCard>
             <MainContent>
-                <HorizontalCard />
-                <HorizontalCard />
-                <HorizontalCard />
-                <HorizontalCard />
-                <HorizontalCard />
+                <HorizontalCard
+                    date={new Date().toDateString()}
+                    title="What is this keyword in JavaScript?"
+                    photoUrl=""
+                    description="Here you add some description about your projects or posts"
+                />
+                <HorizontalCard
+                    date={new Date().toDateString()}
+                    title="What is this keyword in JavaScript?"
+                    photoUrl=""
+                    description="Here you add some description about your projects or posts"
+                />
+                <HorizontalCard
+                    date={new Date().toDateString()}
+                    title="What is this keyword in JavaScript?"
+                    photoUrl=""
+                    description="Here you add some description about your projects or posts"
+                />
+                <HorizontalCard
+                    date={new Date().toDateString()}
+                    title="What is this keyword in JavaScript?"
+                    photoUrl=""
+                    description="Here you add some description about your projects or posts"
+                />
             </MainContent>
         </>
     );
