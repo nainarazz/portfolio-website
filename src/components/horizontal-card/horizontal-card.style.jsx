@@ -37,7 +37,7 @@ export const CardTitle = styled.div`
         color: ${themeColor.darkShade};
         margin-bottom: 1rem;
     }
-    .date {
+    .sub-title {
         padding-bottom: 10px;
         color: ${themeColor.lightAccent};
     }

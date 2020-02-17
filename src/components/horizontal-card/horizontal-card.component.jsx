@@ -16,9 +16,10 @@ export const HorizontalCard = props => {
                 <Content>
                     <CardTitle>
                         <h3>{props.title}</h3>
-                        <div className="date">{props.date}</div>
+                        <div className="sub-title">{props.subTitle}</div>
                     </CardTitle>
                     <CardDescription>{props.description}</CardDescription>
+                    {props.children}
                 </Content>
             </CardContainer>
         </>
@@ -28,6 +29,7 @@ export const HorizontalCard = props => {
 HorizontalCard.propTypes = {
     photoUrl: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
+    subTitle: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
     description: PropTypes.string.isRequired,
-    date: PropTypes.string.isRequired,
+    children: PropTypes.node,
 };
