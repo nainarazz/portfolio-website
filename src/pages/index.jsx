@@ -43,7 +43,6 @@ function HomePage() {
                     <StyledLink>View all posts</StyledLink>
                 </Link>
             </MainContent>
-            <Footer />
         </>
     );
 }

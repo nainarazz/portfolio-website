@@ -79,6 +79,17 @@ export const Intro = styled.div`
     }
 `;
 
+export const SocialIconContainer = styled.div`
+    margin-top: 20px;
+`;
+
+export const SocialIcon = styled.a`
+    text-decoration: none;
+    margin-right: 20px;
+    img {
+        height: 35px;
+    }
+`;
 export const Photo = styled.img`
     width: 200px;
     height: 200px;
