@@ -12,7 +12,12 @@ export const HorizontalCard = props => {
     return (
         <>
             <CardContainer>
-                <CardPhoto>{props.photoUrl}</CardPhoto>
+                {props.photoUrl && (
+                    <CardPhoto>
+                        <img src={props.photoUrl} alt="" />
+                    </CardPhoto>
+                )}
+
                 <Content>
                     <CardTitle>
                         <h3>{props.title}</h3>

@@ -19,6 +19,13 @@ export const CardContainer = styled.div`
 
 export const CardPhoto = styled.div`
     flex-basis: 53%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     @media (min-width: 825px) {
         flex-basis: 35.5%;
     }
