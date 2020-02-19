@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         height: 100vh;
+        color: rgb(34, 36, 38);
 
         #__next {
             position: relative;
