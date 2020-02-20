@@ -1,0 +1,35 @@
+{
+    "name": "Naina Personal Website",
+    "short_name": "NR",
+    "icons": [
+        {
+            "src": "/static/images/logo.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "/static/images/logo.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/static/images/logo.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "/static/images/logo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/static/images/logo.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "https://portfolio-website.nainarazz.now.sh/",
+    "display": "standalone",
+    "background_color": "#ad5389",
+    "theme_color": "#ad5389"
+}
