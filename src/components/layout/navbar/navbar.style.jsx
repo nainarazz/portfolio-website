@@ -26,10 +26,13 @@ export const Nav = styled.div`
 `;
 
 export const Logo = styled.div`
-    padding: 10px;
     font-size: 1.2rem;
     &:hover {
         cursor: pointer;
+    }
+    img {
+        height: 40px;
+        width: 40px;
     }
 `;
 

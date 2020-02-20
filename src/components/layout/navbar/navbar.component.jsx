@@ -32,7 +32,9 @@ export const NavBar = () => {
             <Container shouldShowShadow={shouldShowShadow} shouldHideHeader={shouldHideHeader}>
                 <Nav>
                     <Link href="/">
-                        <Logo>NR</Logo>
+                        <Logo>
+                            <img src="/static/images/logo.png" alt="" />
+                        </Logo>
                     </Link>
                     <MenuItems>
                         <Link href="/about">
