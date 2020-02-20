@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Container, MenuItems, Item, Logo, Nav } from './navbar.style';
+import { Container, MenuItems, Item, Logo, Nav, StyledAchorTag } from './navbar.style';
 import useDocumentScrollThrottled from '../../../utilities/useDocumentScrollThrottled';
 import { SideDrawer } from '../../side-drawer/side-drawer.component';
 import Burger from '../../burger/burger.component';
@@ -44,8 +44,12 @@ export const NavBar = () => {
                         <Link href="/blog">
                             <Item>Blog</Item>
                         </Link>
-                        <Link href="/resume">
-                            <Item>Resumé</Item>
+                        <Link
+                            href="https://docs.google.com/document/d/1SX8ou3-uwcEK0hTY4cch4gL3dQWmbG_YjlPdoqYWSS4/edit?usp=sharing"
+                            passHref
+                            prefetch={false}
+                        >
+                            <StyledAchorTag target="_blank">Résumé</StyledAchorTag>
                         </Link>
                     </MenuItems>
                     <Burger toggleSideDrawer={toggleSideDrawer} isOpen={sideDrawerOpen} />

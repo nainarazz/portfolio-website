@@ -50,3 +50,14 @@ export const Item = styled.div`
         border-bottom: 3px solid ${themeColor.lightShade};
     }
 `;
+
+export const StyledAchorTag = styled.a`
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    &:hover {
+        cursor: pointer;
+        border-bottom: 3px solid ${themeColor.lightShade};
+    }
+`;

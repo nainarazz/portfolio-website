@@ -16,7 +16,8 @@ export const Container = styled.div`
 `;
 
 export const SideDrawerItem = styled.div`
-    button {
+    button,
+    a {
         border: 0;
         color: #fff;
         font-size: 1.2rem;
@@ -25,7 +26,16 @@ export const SideDrawerItem = styled.div`
         height: 50px;
     }
 
-    button:hover {
+    a {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        font-family: 'Arial';
+        line-height: 50px;
+    }
+
+    button:hover,
+    a:hover {
         cursor: pointer;
         color: #fff;
     }

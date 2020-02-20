@@ -36,10 +36,14 @@ export const SideDrawer = props => {
                     </Link>
                 </SideDrawerItem>
                 <SideDrawerItem>
-                    <Link href="/resume">
-                        <button onClick={props.toggleSideDrawer} type="button">
+                    <Link
+                        href="https://docs.google.com/document/d/1SX8ou3-uwcEK0hTY4cch4gL3dQWmbG_YjlPdoqYWSS4/edit?usp=sharing"
+                        passHref
+                        prefetch={false}
+                    >
+                        <a target="_blank" onClick={props.toggleSideDrawer} type="button">
                             Resumé
-                        </button>
+                        </a>
                     </Link>
                 </SideDrawerItem>
             </Container>
