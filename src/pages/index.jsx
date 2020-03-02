@@ -4,7 +4,6 @@ import Link from 'next/link';
 import MainContent from '../components/layout/main-content/main-content.component';
 import { Hero } from '../components/sections/hero/hero.component';
 import { NavBar } from '../components/layout/navbar/navbar.component';
-import { Footer } from '../components/layout/footer/footer.component';
 import { HorizontalCard } from '../components/horizontal-card/horizontal-card.component';
 import { StyledHeading, StyledLink } from '../pages-styles/index.style';
 
