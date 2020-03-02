@@ -7,6 +7,7 @@ import { NavBar } from '../components/layout/navbar/navbar.component';
 import { Footer } from '../components/layout/footer/footer.component';
 import { HorizontalCard } from '../components/horizontal-card/horizontal-card.component';
 import { StyledHeading, StyledLink } from '../pages-styles/index.style';
+import blogPosts from '../data/blog-posts';
 
 function HomePage() {
     return (

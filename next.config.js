@@ -1,5 +1,9 @@
 const nextOffline = require('next-offline');
 
+const withMDX = require('@next/mdx')({
+    extension: /\.mdx?$/
+});
+
 const nextConfig = {
     workboxOpts: {
         swDest: 'static/service-worker.js',
@@ -28,7 +32,8 @@ const nextConfig = {
                 },
             },
         ],
-    }
+    },
+    pageExtensions: ['js', 'jsx', 'md', 'mdx']
 };
 
-module.exports = nextOffline(nextConfig);
+module.exports = withMDX(nextOffline(nextConfig));
