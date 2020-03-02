@@ -1,10 +1,10 @@
 export const meta = {
 published: true,
-publishedAt: '2020-02-15',
-title: 'This is my very first blog post',
+publishedAt: '2020-02-17',
+title: 'How can side projects help you become senior developer',
 summary:
-'I am learning how to build a blog using Markdown in a static web page build on top of Next.js',
-backgroundImgUrl: '/static/images/saas-icon.png'
+'Did you know that by working on side projects you gain the skills needed to become a software developer?',
+backgroundImgUrl: '/static/images/email-logo.png'
 };
 
 export default ({ children }) => (<div>{children}</div>);

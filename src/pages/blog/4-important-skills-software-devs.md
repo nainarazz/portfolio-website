@@ -1,10 +1,10 @@
 export const meta = {
 published: true,
-publishedAt: '2020-02-15',
-title: 'This is my very first blog post',
+publishedAt: '2020-02-17',
+title: '4 Most Important Skills for Software Developers',
 summary:
-'I am learning how to build a blog using Markdown in a static web page build on top of Next.js',
-backgroundImgUrl: '/static/images/saas-icon.png'
+'What are the most important skills needed by software developers to be successful? Find out in this post.',
+backgroundImgUrl: '/static/images/react-icon.png'
 };
 
 export default ({ children }) => (<div>{children}</div>);

@@ -1,10 +1,10 @@
 export const meta = {
 published: true,
-publishedAt: '2020-02-15',
-title: 'This is my very first blog post',
+publishedAt: '2020-02-17',
+title: 'Why contribute to open source',
 summary:
-'I am learning how to build a blog using Markdown in a static web page build on top of Next.js',
-backgroundImgUrl: '/static/images/saas-icon.png'
+'Reasons to contribute to open source software',
+backgroundImgUrl: '/static/images/javascript-icon.png'
 };
 
 export default ({ children }) => (<div>{children}</div>);

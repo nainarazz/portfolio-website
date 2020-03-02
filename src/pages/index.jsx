@@ -5,7 +5,8 @@ import MainContent from '../components/layout/main-content/main-content.componen
 import { Hero } from '../components/sections/hero/hero.component';
 import { NavBar } from '../components/layout/navbar/navbar.component';
 import { HorizontalCard } from '../components/horizontal-card/horizontal-card.component';
-import { StyledHeading, StyledLink } from '../pages-styles/index.style';
+import { StyledHeading, StyledLink, CardWrapper } from '../pages-styles/index.style';
+import blogPosts from '../data/blog-posts';
 
 function HomePage() {
     return (
@@ -14,30 +15,19 @@ function HomePage() {
             <Hero />
             <MainContent>
                 <StyledHeading>Blog Posts</StyledHeading>
-                <HorizontalCard
-                    subTitle={new Date().toDateString()}
-                    title="What is this keyword in JavaScript?"
-                    photoUrl=""
-                    description="Here you add some description about your projects or posts"
-                />
-                <HorizontalCard
-                    subTitle={new Date().toDateString()}
-                    title="What is this keyword in JavaScript?"
-                    photoUrl=""
-                    description="Here you add some description about your projects or posts"
-                />
-                <HorizontalCard
-                    subTitle={new Date().toDateString()}
-                    title="What is this keyword in JavaScript?"
-                    photoUrl=""
-                    description="Here you add some description about your projects or posts"
-                />
-                <HorizontalCard
-                    subTitle={new Date().toDateString()}
-                    title="What is this keyword in JavaScript?"
-                    photoUrl=""
-                    description="Here you add some description about your projects or posts"
-                />
+                {blogPosts.slice(0, 5).map((post, index) => (
+                    <Link href={post.path} key={index}>
+                        <CardWrapper>
+                            <HorizontalCard
+                                subTitle={post.publishedAt}
+                                title={post.title}
+                                photoUrl={post.backgroundImgUrl}
+                                description={post.summary}
+                            />
+                        </CardWrapper>
+                    </Link>
+                ))}
+
                 <Link href="/blog">
                     <StyledLink>View all posts</StyledLink>
                 </Link>
