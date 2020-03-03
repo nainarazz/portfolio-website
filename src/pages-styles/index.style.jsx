@@ -13,6 +13,9 @@ export const StyledLink = styled.a`
     text-decoration: none;
     display: block;
     text-align: center;
+    :hover {
+        cursor: pointer;
+    }
 `;
 
 export const CardWrapper = styled.div`

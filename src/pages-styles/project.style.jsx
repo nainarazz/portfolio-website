@@ -33,6 +33,7 @@ export const Quote = styled.blockquote`
     position: relative;
     font-size: 1.4em;
     line-height: 1.5;
+    text-align: center;
     color: ${themeColor.lightAccent};
 
     footer {
