@@ -20,9 +20,9 @@ function BlogPage() {
                 <div style={{ padding: '1em' }}>
                     <Quote>
                         Sharing is caring. If people didn't share their knowledge, we wouldn't have
-                        advanced this far in the sofware world. Here are some of the technical and
-                        non-technical things I have learned during my career as a software
-                        developer. I hope it benefits someone.
+                        advanced this far in the software world. Here are some of the technical and
+                        non-technical things I have learned as a software developer. I hope it
+                        benefits someone.
                     </Quote>
                 </div>
             </ProjectIntroCard>
