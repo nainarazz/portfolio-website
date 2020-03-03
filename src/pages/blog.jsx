@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
+import styled from 'styled-components';
+import InfiniteScroll from 'react-infinite-scroll-component';
 import { NavBar } from '../components/layout/navbar/navbar.component';
 import { HeaderColor } from '../components/sections/hero/hero.style';
 import MainContent from '../components/layout/main-content/main-content.component';
@@ -8,7 +10,19 @@ import { ProjectIntroCard, Quote } from '../pages-styles/project.style';
 import { CardWrapper } from '../pages-styles/index.style';
 import blogPosts from '../data/blog-posts';
 
+const Loader = styled.div`
+    text-align: center;
+`;
+
 function BlogPage() {
+    const [posts, setPosts] = useState(blogPosts.slice(0, 5));
+    const fetchNextPosts = () => {
+        setTimeout(() => {
+            const index = posts.length;
+            const fetchedPosts = blogPosts.slice(index, index + 5);
+            setPosts(posts.concat(fetchedPosts));
+        }, 500);
+    };
     return (
         <>
             <NavBar />
@@ -28,18 +42,25 @@ function BlogPage() {
             </ProjectIntroCard>
 
             <MainContent>
-                {blogPosts.map((post, index) => (
-                    <Link href={post.path} key={index}>
-                        <CardWrapper>
-                            <HorizontalCard
-                                subTitle={post.publishedAt}
-                                title={post.title}
-                                photoUrl={post.backgroundImgUrl}
-                                description={post.summary}
-                            />
-                        </CardWrapper>
-                    </Link>
-                ))}
+                <InfiniteScroll
+                    dataLength={blogPosts.length}
+                    next={fetchNextPosts}
+                    hasMore={posts.length < blogPosts.length}
+                    loader={<Loader>loading...</Loader>}
+                >
+                    {posts.map((post, index) => (
+                        <Link href={post.path} key={index}>
+                            <CardWrapper>
+                                <HorizontalCard
+                                    subTitle={post.publishedAt}
+                                    title={post.title}
+                                    photoUrl={post.backgroundImgUrl}
+                                    description={post.summary}
+                                />
+                            </CardWrapper>
+                        </Link>
+                    ))}
+                </InfiniteScroll>
             </MainContent>
         </>
     );
