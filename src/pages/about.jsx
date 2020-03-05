@@ -13,16 +13,46 @@ import { SocialIcon } from '../components/sections/hero/hero.style';
 
 function AboutPage() {
     const tech = [
-        '/static/images/javascript-icon.png',
-        '/static/images/typescript-icon.png',
-        '/static/images/saas-icon.png',
-        '/static/images/angular-icon.png',
-        '/static/images/react-icon.png',
-        '/static/images/node-js-icon.png',
-        '/static/images/graphql-icon.png',
-        '/static/images/mongodb-icon.png',
-        '/static/images/c-sharp-icon.png',
-        '/static/images/sql-server-icon.svg',
+        {
+            imageUrl: '/static/images/javascript-icon.png',
+            imageAlt: 'javascript',
+        },
+        {
+            imageUrl: '/static/images/typescript-icon.png',
+            imageAlt: 'typescript',
+        },
+        {
+            imageUrl: '/static/images/saas-icon.png',
+            imageAlt: 'saas',
+        },
+        {
+            imageUrl: '/static/images/angular-icon.png',
+            imageAlt: 'angular',
+        },
+        {
+            imageUrl: '/static/images/react-icon.png',
+            imageAlt: 'react',
+        },
+        {
+            imageUrl: '/static/images/node-js-icon.png',
+            imageAlt: 'node js',
+        },
+        {
+            imageUrl: '/static/images/graphql-icon.png',
+            imageAlt: 'graphql',
+        },
+        {
+            imageUrl: '/static/images/mongodb-icon.png',
+            imageAlt: 'mongodb',
+        },
+        {
+            imageUrl: '/static/images/c-sharp-icon.png',
+            imageAlt: 'c#',
+        },
+        {
+            imageUrl: '/static/images/sql-server-icon.svg',
+            imageAlt: 'sql server',
+        },
     ];
     return (
         <>
@@ -62,7 +92,7 @@ function AboutPage() {
                     </Text>
                     <TechContainer>
                         {tech.map((t, index) => (
-                            <Tech key={index} src={t} alt="" />
+                            <Tech key={index} src={t.imageUrl} alt={t.imageAlt} />
                         ))}
                     </TechContainer>
                     <Text>
@@ -70,10 +100,10 @@ function AboutPage() {
                         my email.
                     </Text>
                     <Contact href="https://linkedin.com/in/nainarazz" target="_blank">
-                        <img src="/static/images/linkedin-logo.png" alt="" />
+                        <img src="/static/images/linkedin-logo.png" alt="linkedin" />
                     </Contact>
                     <Contact href="mailto:grecipeapp@gmail.com">
-                        <img src="/static/images/email-logo.png" alt="" />
+                        <img src="/static/images/email-logo.png" alt="gmail" />
                     </Contact>
                 </MainContent>
             </MainContentWrapper>

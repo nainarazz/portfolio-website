@@ -6,7 +6,8 @@ publishedAt: '2020-02-17',
 title: '4 Most Important Skills for Software Developers',
 summary:
 'What are the most important skills needed by software developers to be successful? Find out in this post.',
-backgroundImgUrl: '/static/images/react-icon.png'
+thumbnailImage: '/static/images/react-icon.png',
+thumbnailImageAlt: 'software developer skills'
 };
 
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;

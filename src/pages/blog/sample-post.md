@@ -6,7 +6,8 @@ publishedAt: '2020-02-15',
 title: 'This is my very first blog post',
 summary:
 'I am learning how to build a blog using Markdown in a static web page build on top of Next.js',
-backgroundImgUrl: '/static/images/saas-icon.png'
+thumbnailImage: '/static/images/saas-icon.png',
+thumbnailImageAlt: 'saas'
 };
 
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;

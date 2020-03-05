@@ -6,7 +6,8 @@ publishedAt: '2020-02-17',
 title: 'Why contribute to open source',
 summary:
 'Reasons to contribute to open source software',
-backgroundImgUrl: '/static/images/javascript-icon.png'
+thumbnailImage: '/static/images/javascript-icon.png',
+thumbnailImageAlt: 'open source'
 };
 
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;

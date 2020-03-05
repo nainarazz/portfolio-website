@@ -12,17 +12,17 @@ export const Hero = () => {
                         <h2>I build stuff for the web.</h2>
                         <SocialIconContainer>
                             <SocialIcon href="https://github.com/nainarazz" target="_blank">
-                                <img src="/static/images/github-logo-square.png" alt="" />
+                                <img src="/static/images/github-logo-square.png" alt="github" />
                             </SocialIcon>
                             <SocialIcon href="https://linkedin.com/in/nainarazz" target="_blank">
-                                <img src="/static/images/linkedin-logo.png" alt="" />
+                                <img src="/static/images/linkedin-logo.png" alt="linkedin" />
                             </SocialIcon>
                             <SocialIcon href="mailto:grecipeapp@gmail.com">
-                                <img src="/static/images/email-logo.png" alt="" />
+                                <img src="/static/images/email-logo.png" alt="email" />
                             </SocialIcon>
                         </SocialIconContainer>
                     </Intro>
-                    <Photo src="/static/images/profile-pic.jpg" />
+                    <Photo src="/static/images/profile-pic.jpg" alt="profile photo" />
                 </Content>
             </HeaderColor>
         </>

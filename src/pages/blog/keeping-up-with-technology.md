@@ -6,7 +6,8 @@ publishedAt: '2020-02-17',
 title: 'Keeping up with technology',
 summary:
 'New JavaScript frameworks, programming languages, and different tools pop up every day. How do we keep up?',
-backgroundImgUrl: '/static/images/graphql-icon.png'
+thumbnailImage: '/static/images/graphql-icon.png',
+thumbnailImageAlt: 'graphql'
 };
 
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;

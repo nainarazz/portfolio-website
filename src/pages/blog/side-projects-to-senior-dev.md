@@ -6,7 +6,8 @@ publishedAt: '2020-02-17',
 title: 'How can side projects help you become senior developer',
 summary:
 'Did you know that by working on side projects you gain the skills needed to become a software developer?',
-backgroundImgUrl: '/static/images/email-logo.png'
+thumbnailImage: '/static/images/email-logo.png',
+thumbnailImageAlt: 'side projects'
 };
 
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;

@@ -14,7 +14,7 @@ export const HorizontalCard = props => {
             <CardContainer>
                 {props.photoUrl && (
                     <CardPhoto>
-                        <img src={props.photoUrl} alt="" />
+                        <img src={props.photoUrl} alt={props.photoAlt || ''} />
                     </CardPhoto>
                 )}
 
@@ -33,6 +33,7 @@ export const HorizontalCard = props => {
 
 HorizontalCard.propTypes = {
     photoUrl: PropTypes.string.isRequired,
+    photoAlt: PropTypes.string,
     title: PropTypes.string.isRequired,
     subTitle: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
     description: PropTypes.string.isRequired,

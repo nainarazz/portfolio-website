@@ -55,6 +55,7 @@ function ProjectPage() {
                         }
                         title={p.name}
                         photoUrl={p.projectImageUrl}
+                        photoAlt={p.imageAlt}
                         description={p.description}
                     >
                         {p.technologies.length && (

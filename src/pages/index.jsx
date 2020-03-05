@@ -24,8 +24,9 @@ function HomePage() {
                         <CardWrapper>
                             <HorizontalCard
                                 subTitle={post.publishedAt}
+                                photoAlt={post.thumbnailImageAlt}
                                 title={post.title}
-                                photoUrl={post.backgroundImgUrl}
+                                photoUrl={post.thumbnailImage}
                                 description={post.summary}
                             />
                         </CardWrapper>

@@ -6,7 +6,8 @@ publishedAt: '2020-02-17',
 title: 'Code quality tools',
 summary:
 'What tools do you use to improve code quality in your project?',
-backgroundImgUrl: '/static/images/node-js-icon.png'
+thumbnailImage: '/static/images/node-js-icon.png',
+thumbnailImageAlt: 'nodejs'
 };
 
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
