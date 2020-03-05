@@ -8,7 +8,7 @@ export const StyledHeading = styled.h2`
 `;
 
 export const StyledLink = styled.a`
-    color: ${themeColor.lightAccent};
+    color: ${themeColor.darkShade};
     font-size: 1.2rem;
     text-decoration: none;
     display: block;
