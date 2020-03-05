@@ -38,6 +38,10 @@ export default class MyDocument extends Document {
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                     <link rel="manifest" href="/manifest.json" />
                     <link rel="shortcut icon" href="/favicon.ico" />
+                    <link
+                        href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap"
+                        rel="stylesheet"
+                    ></link>
                 </Head>
                 <body>
                     <Main />

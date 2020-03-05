@@ -7,6 +7,10 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         height: 100vh;
         color: rgb(34, 36, 38);
+        font-family: 'Open Sans', sans-serif;
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
 
         #__next {
             position: relative;
