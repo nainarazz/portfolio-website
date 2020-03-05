@@ -40,7 +40,7 @@ export const Content = styled.div`
 export const CardTitle = styled.div`
     border-bottom: 1px solid ${themeColor.darkShade};
     h3 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: ${themeColor.darkShade};
         margin-bottom: 1rem;
     }

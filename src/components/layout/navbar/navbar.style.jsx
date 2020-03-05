@@ -47,7 +47,7 @@ export const MenuItems = styled.div`
 
 export const Item = styled.div`
     font-size: 1.2rem;
-    padding: 10px;
+    padding: 10px 20px;
     &:hover {
         cursor: pointer;
         border-bottom: 3px solid ${themeColor.lightShade};

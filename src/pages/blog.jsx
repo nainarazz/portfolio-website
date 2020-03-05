@@ -14,6 +14,10 @@ const Loader = styled.div`
     text-align: center;
 `;
 
+const StyledInfiniteScroll = styled(InfiniteScroll)`
+    padding: 10px;
+`;
+
 function BlogPage() {
     const [posts, setPosts] = useState(blogPosts.slice(0, 5));
     const fetchNextPosts = () => {
@@ -42,7 +46,7 @@ function BlogPage() {
             </ProjectIntroCard>
 
             <MainContent>
-                <InfiniteScroll
+                <StyledInfiniteScroll
                     dataLength={blogPosts.length}
                     next={fetchNextPosts}
                     hasMore={posts.length < blogPosts.length}
@@ -60,7 +64,7 @@ function BlogPage() {
                             </CardWrapper>
                         </Link>
                     ))}
-                </InfiniteScroll>
+                </StyledInfiniteScroll>
             </MainContent>
         </>
     );

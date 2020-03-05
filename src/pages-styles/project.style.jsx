@@ -31,7 +31,7 @@ export const ProjectIntroCard = styled.div`
 
 export const Quote = styled.blockquote`
     position: relative;
-    font-size: 1.4em;
+    font-size: 1.3em;
     line-height: 1.5;
     text-align: center;
     color: ${themeColor.lightAccent};
@@ -47,6 +47,7 @@ export const Quote = styled.blockquote`
 export const SubTitleLink = styled.a`
     text-decoration: none;
     margin-right: 20px;
+    font-size: 0.9rem;
     img {
         height: 40px;
         width: 40px;
@@ -63,6 +64,7 @@ export const TechChips = styled.div`
         color: #fff;
         margin-right: 20px;
         margin-bottom: 10px;
-        padding: 10px;
+        padding: 7px;
+        font-size: 0.9rem;
     }
 `;

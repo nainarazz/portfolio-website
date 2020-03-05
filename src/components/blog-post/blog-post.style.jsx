@@ -60,6 +60,7 @@ export const ButtonLink = styled.a`
     display: block;
     float: left;
     clear: both;
+    font-size: 1.2rem;
 
     transition: background-color 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s,
         border-radius 0.2s;

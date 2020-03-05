@@ -11,6 +11,7 @@ export const StyledBurger = styled.button`
     cursor: pointer;
     padding: 0;
     position: relative;
+    top: 8px;
     z-index: 105;
 
     &:focus {
@@ -19,7 +20,7 @@ export const StyledBurger = styled.button`
 
     div {
         width: 2rem;
-        height: 0.25rem;
+        height: 0.2rem;
         background: #fff;
         border-radius: 10px;
         transition: all 0.3s linear;
