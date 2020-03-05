@@ -62,7 +62,8 @@ function BlogPage() {
                                 <HorizontalCard
                                     subTitle={post.publishedAt}
                                     title={post.title}
-                                    photoUrl={post.backgroundImgUrl}
+                                    photoUrl={post.thumbnailImage}
+                                    photoAlt={post.thumbnailImageAlt}
                                     description={post.summary}
                                 />
                             </CardWrapper>
