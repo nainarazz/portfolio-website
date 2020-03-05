@@ -41,7 +41,12 @@ export const SideDrawer = props => {
                         passHref
                         prefetch={false}
                     >
-                        <a target="_blank" onClick={props.toggleSideDrawer} type="button">
+                        <a
+                            target="_blank"
+                            onClick={props.toggleSideDrawer}
+                            type="button"
+                            rel="noreferrer"
+                        >
                             Resumé
                         </a>
                     </Link>

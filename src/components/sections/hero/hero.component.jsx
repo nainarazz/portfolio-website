@@ -11,10 +11,18 @@ export const Hero = () => {
                         <h1>Naina Razafindrabiby.</h1>
                         <h2>I build stuff for the web.</h2>
                         <SocialIconContainer>
-                            <SocialIcon href="https://github.com/nainarazz" target="_blank">
+                            <SocialIcon
+                                href="https://github.com/nainarazz"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 <img src="/static/images/github-logo-square.png" alt="github" />
                             </SocialIcon>
-                            <SocialIcon href="https://linkedin.com/in/nainarazz" target="_blank">
+                            <SocialIcon
+                                href="https://linkedin.com/in/nainarazz"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 <img src="/static/images/linkedin-logo.png" alt="linkedin" />
                             </SocialIcon>
                             <SocialIcon href="mailto:grecipeapp@gmail.com">

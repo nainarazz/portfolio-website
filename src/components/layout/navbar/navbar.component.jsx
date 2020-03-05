@@ -51,7 +51,9 @@ export const NavBar = () => {
                             passHref
                             prefetch={false}
                         >
-                            <StyledAchorTag target="_blank">Résumé</StyledAchorTag>
+                            <StyledAchorTag target="_blank" rel="noreferrer">
+                                Résumé
+                            </StyledAchorTag>
                         </Link>
                     </MenuItems>
                     <Burger toggleSideDrawer={toggleSideDrawer} isOpen={sideDrawerOpen} />

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { StyledBurger } from './burger.style';
 
 const Burger = props => (
-    <StyledBurger onClick={props.toggleSideDrawer} open={props.isOpen}>
+    <StyledBurger onClick={props.toggleSideDrawer} open={props.isOpen} aria-label="menu">
         <div />
         <div />
         <div />

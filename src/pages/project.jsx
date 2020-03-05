@@ -36,14 +36,14 @@ function ProjectPage() {
                         subTitle={
                             <>
                                 {p.github && (
-                                    <SubTitleLink href={p.github} target="_blank">
+                                    <SubTitleLink href={p.github} target="_blank" rel="noreferrer">
                                         <img src="/static/images/github-logo.png" alt="github" />
                                         <span>Github</span>
                                     </SubTitleLink>
                                 )}
 
                                 {p.website && (
-                                    <SubTitleLink href={p.website} target="_blank">
+                                    <SubTitleLink href={p.website} target="_blank" rel="noreferrer">
                                         <img
                                             src="/static/images/redirection-icon.png"
                                             alt="website"

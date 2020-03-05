@@ -81,6 +81,7 @@ function AboutPage() {
                         <a
                             href="https://docs.google.com/document/d/1SX8ou3-uwcEK0hTY4cch4gL3dQWmbG_YjlPdoqYWSS4/edit?usp=sharing"
                             target="_blank"
+                            rel="noreferrer"
                         >
                             resume
                         </a>{' '}
@@ -99,7 +100,11 @@ function AboutPage() {
                         If you have anything for me, feel free to leave me a message on LinkedIn or
                         my email.
                     </Text>
-                    <Contact href="https://linkedin.com/in/nainarazz" target="_blank">
+                    <Contact
+                        href="https://linkedin.com/in/nainarazz"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
                         <img src="/static/images/linkedin-logo.png" alt="linkedin" />
                     </Contact>
                     <Contact href="mailto:grecipeapp@gmail.com">
