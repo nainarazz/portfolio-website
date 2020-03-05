@@ -1,5 +1,6 @@
 /* eslint-disable react/self-closing-comp */
 import React from 'react';
+import Head from 'next/head';
 import { NavBar } from '../components/layout/navbar/navbar.component';
 import { HeaderColor } from '../components/sections/hero/hero.style';
 import MainContent from '../components/layout/main-content/main-content.component';
@@ -10,6 +11,9 @@ import { projects } from '../data/project';
 function ProjectPage() {
     return (
         <>
+            <Head>
+                <title>Projects</title>
+            </Head>
             <NavBar />
             <HeaderColor>
                 <div style={{ height: 90 }}></div>

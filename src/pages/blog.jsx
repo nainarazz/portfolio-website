@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Head from 'next/head';
 import styled from 'styled-components';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { NavBar } from '../components/layout/navbar/navbar.component';
@@ -29,6 +30,9 @@ function BlogPage() {
     };
     return (
         <>
+            <Head>
+                <title>Blog</title>
+            </Head>
             <NavBar />
             <HeaderColor>
                 <div style={{ height: 90 }}></div>

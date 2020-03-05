@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import MainContent from '../components/layout/main-content/main-content.component';
 import { NavBar } from '../components/layout/navbar/navbar.component';
 import {
@@ -25,6 +26,9 @@ function AboutPage() {
     ];
     return (
         <>
+            <Head>
+                <title>About Me</title>
+            </Head>
             <NavBar />
             <MainContentWrapper>
                 <MainContent>

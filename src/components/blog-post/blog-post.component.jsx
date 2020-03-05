@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import Head from 'next/head';
 import {
     PostContainer,
     Post,
@@ -37,6 +38,9 @@ const BlogPost = ({ meta, children }) => {
 
     return (
         <>
+            <Head>
+                <title>{meta.title}</title>
+            </Head>
             <NavBar />
             <HeaderColor>
                 <div style={{ height: 90 }}></div>
