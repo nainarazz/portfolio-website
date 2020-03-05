@@ -46,7 +46,7 @@ export const CardTitle = styled.div`
     }
     .sub-title {
         padding-bottom: 10px;
-        color: ${themeColor.lightAccent};
+        color: ${themeColor.darkAccent};
     }
 `;
 

@@ -31,11 +31,15 @@ export default class MyDocument extends Document {
 
     render() {
         return (
-            <Html>
+            <Html lang="en">
                 <Head>
                     {this.props.styles}
                     <meta charSet="utf-8" />
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                    <meta
+                        name="description"
+                        content="A personal blog dedicated to web technologies and Javascript"
+                    />
                     <link rel="manifest" href="/manifest.json" />
                     <link rel="shortcut icon" href="/favicon.ico" />
                     <link
