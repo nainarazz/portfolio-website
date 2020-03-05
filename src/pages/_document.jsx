@@ -34,7 +34,6 @@ export default class MyDocument extends Document {
             <Html>
                 <Head>
                     {this.props.styles}
-                    <title>Naina Codes</title>
                     <meta charSet="utf-8" />
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                     <link rel="manifest" href="/manifest.json" />
