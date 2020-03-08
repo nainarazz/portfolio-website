@@ -25,7 +25,7 @@ export const Hero = () => {
                             >
                                 <img src="/static/images/linkedin-logo.png" alt="linkedin" />
                             </SocialIcon>
-                            <SocialIcon href="mailto:grecipeapp@gmail.com">
+                            <SocialIcon href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#110;&#97;&#105;&#110;&#97;&#114;&#97;&#122;&#122;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">
                                 <img src="/static/images/email-logo.png" alt="email" />
                             </SocialIcon>
                         </SocialIconContainer>
