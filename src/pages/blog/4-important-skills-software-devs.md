@@ -2,12 +2,13 @@ import BlogPost from '../../components/blog-post/blog-post.component';
 
 export const meta = {
 published: true,
-publishedAt: '2020-02-17',
+publishedAt: '2020-04-20',
 title: '4 Most Important Skills for Software Developers',
-summary:
-'What are the most important skills needed by software developers to be successful? Find out in this post.',
-thumbnailImage: '/static/images/react-icon.png',
-thumbnailImageAlt: 'software developer skills'
+summary: 'What are the most important skills needed by software developers to be successful? Find out in this post.',
+src: '',
+srcSet: '',
+alt: 'software developer skills',
+sizes: ''
 };
 
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;

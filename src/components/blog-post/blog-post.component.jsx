@@ -49,7 +49,7 @@ const BlogPost = ({ meta, children }) => {
             <PostContainer>
                 <Post>
                     <Title>{meta.title}</Title>
-                    <PostImage src={meta.thumbnailImage} alt={meta.thumbnailImageAlt} />
+                    {meta.src && <PostImage srcSet={meta.srcSet} src={meta.src} alt={meta.alt} />}
                     {children}
                 </Post>
             </PostContainer>

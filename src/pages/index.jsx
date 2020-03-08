@@ -24,18 +24,22 @@ function HomePage() {
                         <CardWrapper>
                             <HorizontalCard
                                 subTitle={post.publishedAt}
-                                photoAlt={post.thumbnailImageAlt}
+                                photoAlt={post.alt}
                                 title={post.title}
-                                photoUrl={post.thumbnailImage}
+                                srcSet={post.srcSet}
+                                sizes={post.sizes}
+                                photoUrl={post.src}
                                 description={post.summary}
                             />
                         </CardWrapper>
                     </Link>
                 ))}
 
-                <Link href="/blog">
-                    <StyledLink>View all posts</StyledLink>
-                </Link>
+                {blogPosts.length > 5 && (
+                    <Link href="/blog">
+                        <StyledLink>View all posts</StyledLink>
+                    </Link>
+                )}
             </MainContent>
         </>
     );

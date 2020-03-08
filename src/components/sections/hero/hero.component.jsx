@@ -30,7 +30,11 @@ export const Hero = () => {
                             </SocialIcon>
                         </SocialIconContainer>
                     </Intro>
-                    <Photo src="/static/images/profile-pic.jpg" alt="profile photo" />
+                    <Photo
+                        src="/static/images/profile-pic.jpg"
+                        srcSet="/static/images/profile-pic_w331.jpg 331w, /static/images/profile-pic_w519.jpg 519w, /static/images/profile-pic_w740.jpg 740w"
+                        alt="profile photo"
+                    />
                 </Content>
             </HeaderColor>
         </>

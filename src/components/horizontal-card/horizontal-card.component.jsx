@@ -14,7 +14,12 @@ export const HorizontalCard = props => {
             <CardContainer>
                 {props.photoUrl && (
                     <CardPhoto>
-                        <img src={props.photoUrl} alt={props.photoAlt || ''} />
+                        <img
+                            srcSet={props.srcSet}
+                            sizes={props.sizes}
+                            src={props.photoUrl}
+                            alt={props.photoAlt || ''}
+                        />
                     </CardPhoto>
                 )}
 
@@ -34,6 +39,8 @@ export const HorizontalCard = props => {
 HorizontalCard.propTypes = {
     photoUrl: PropTypes.string.isRequired,
     photoAlt: PropTypes.string,
+    srcSet: PropTypes.string,
+    sizes: PropTypes.string,
     title: PropTypes.string.isRequired,
     subTitle: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
     description: PropTypes.string.isRequired,
