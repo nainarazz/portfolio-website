@@ -1,5 +1,5 @@
 {
-    "name": "Naina Personal Website",
+    "name": "Naina Codes",
     "short_name": "NR",
     "icons": [
         {
@@ -28,7 +28,7 @@
             "type": "image/png"
         }
     ],
-    "start_url": "https://portfolio-website.nainarazz.now.sh/",
+    "start_url": "https://nainacodes.com/",
     "display": "standalone",
     "background_color": "#ad5389",
     "theme_color": "#ad5389"
