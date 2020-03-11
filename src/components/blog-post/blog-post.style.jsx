@@ -28,9 +28,14 @@ export const Title = styled.h2`
 `;
 
 export const PostImage = styled.img`
-    max-width: 20%;
+    max-width: 50%;
     display: block;
     margin: auto;
+`;
+
+export const ImageAttribution = styled.div`
+    font-size: 0.9rem;
+    text-align: center;
 `;
 
 export const MorePostsContainer = styled.div`

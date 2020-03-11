@@ -2,153 +2,71 @@ import BlogPost from '../../components/blog-post/blog-post.component';
 
 export const meta = {
 published: true,
-publishedAt: '2020-04-20',
+publishedAt: '2020-03-11',
+readingTime: 7,
+url: '/blog/4-important-skills-software-devs',
 title: '4 Most Important Skills for Software Developers',
 summary: 'What are the most important skills needed by software developers to be successful? Find out in this post.',
-src: '',
-srcSet: '',
+src: '/blog-images/4-important-skills-software-devs/soft-skills_w_683.jpg',
+srcSet: '/blog-images/4-important-skills-software-devs/soft-skills_w_200.jpg 200w, /blog-images/4-important-skills-software-devs/soft-skills_w_522.jpg 522w, /blog-images/4-important-skills-software-devs/soft-skills_w_683.jpg 683w',
 alt: 'software developer skills',
-sizes: ''
+sizes: '',
+imgAuthorAttribution: 'Coreaxis',
+imgAttributionUrl: 'https://coreaxis.com/why-soft-skills-training-is-still-trending-in-2019/'
 };
 
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
-What are some skills that you need to learn as a software developer?
+Last Sunday I was teaching English at my local English club and the theme that we had for the session was about job skills. What are the skills that we need today in order to be successful at our jobs?
 
-1. Communication skills
-2.
+We all mentioned the skills we think are important and needed for jobs, but at the end we all agreed that skills needed for one particular job are different from another job. For example, while an accountant needs to have great number crunching abilities, a translator/interpreter needs to have excellent language skills. But there are also certain skills that are important for every job, like being able to work with others.
 
-Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
+So what are the most important skills needed by software developers to be successful in their field? Here are the top 4 skills I think are of most important.
 
-**some text in here that is bolad**
+**1. Problem solving**
 
-# Files
+Software developers are problem solvers. Nearly all tasks assigned to developers require finding a solution to a problem. Good software developers know how to define problems well, break them down into smaller problems, and find an optimal solution using the resources available. They have a systematic method of approaching a problem. Actually there is no code to write if you don’t even know what to write.
 
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
+Problem solving is a skill that can be learned and improved. After learning a programming language, it is good to learn about Data Structures and Algorithms using that programming language. It would really beneficial to know basic data structures like arrays, linked lists, trees, and graphs, and common algorithms like binary search, DFS, BFS and sorting algorithms. Although you may not always use them in your day-to-day tasks, knowing data structures and algorithms will help you solve problems differently from those who don’t know them.
 
-## Create files and folders
+There are plenty of resources to learn DS and Algorithms online. I usually use Udemy to learn with videos, but you can also find many other resources on the internet. I mainly code in JavaScript, and here are some of the best courses on Udemy about DS and Algorithms using JavaScript:
 
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
+-   [Master the Coding Interview Data Structures And Algorithms by Andrei Neagoie](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/)
+-   [JS Algoritms and Data Structures Masterclass by Colt Steele](https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/)
 
-## Switch to another file
+There are many online platforms, like HackerRank, LeetCode, and CodeSignal, where you can practice and improve your problem solving skills.
 
-All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.
+**2. Communication Skills**
 
-## Rename a file
+Although software developers spend most of their time in front of the computer, they still have to talk to real human beings. They have to report to managers and supervisors, attend meetings, talk to clients, and also ask help from other developers. It is therefore crucial to communicate effectively in order to avoid misunderstandings.
 
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
+There is a saying that a **problem well stated is half solved**. You will not know everything, and at some point you will have to ask for help from people who are better than you. If you are able to clearly express yourself, they will easily be able to help you.
 
-## Delete a file
+When you have great speaking skills, you may be called to speak at developer meetups and conferences
 
-You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
+Written communication skills are also important. Writing documentation is part of the software development. As a software developer, you may be required to write documentation for an API or user manual for users of the software. The documentation must be clear and easy to understand.
 
-## Export a file
+**3. Working with others**
 
-You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
+When I was still in school, I used to work on software projects alone. They were small in scope, so working alone wasn’t a problem at all. In the corporate world, however, software projects are done in teams. You have to collaborate with designers, frontend developers, backend developers, managers, product owners and other stakeholders of the projects. Everyone has a certain role in the success of the project. If you have an attitude and you only want to do things your own way, you are going to put the project at risk.
 
-# Synchronization
+Creating software is supposed to be a team effort. It is like playing football. You have to play as a team and not as individuals. Even if you have the best player in the team, you will not win any match if the players of the team don’t work together.
 
-Synchronization is one of the biggest features of StackEdit. It enables you to synchronize any file in your workspace with other files stored in your **Google Drive**, your **Dropbox** and your **GitHub** accounts. This allows you to keep writing on other devices, collaborate with people you share the file with, integrate easily into your workflow... The synchronization mechanism takes place every minute in the background, downloading, merging, and uploading file modifications.
+**So learn how to work with others.**
 
-There are two types of synchronization and they can complement each other:
+**4. Ability to learn new things**
 
--   The workspace synchronization will sync all your files, folders and settings automatically. This will allow you to fetch your workspace on any other device. > To start syncing your workspace, just sign in with Google in the menu.
+The software world is moving extremely fast -- new frameworks, tools, platforms, programming languages . You will be left behind if you don’t know how to learn new things. On the other hand, if you are willing and able to adapt to the changing software development market and technologies, you will have significant advantage over others who aren’t willing to adapt to change. You will also always be in demand, and you will get more opportunities come to you.
 
--   The file synchronization will keep one file of the workspace synced with one or multiple files in **Google Drive**, **Dropbox** or **GitHub**. > Before starting to sync files, you must link an account in the **Synchronize** sub-menu.
+However, I would also like to say that you have to learn the right things. You cannot learn every new shiny technology that comes out every month. There is simply no time for that and it will kill your productivity. Instead, try to focus your learning on the tech stack you are using. For example, if you are a JavaScript developer, learn stuff related to the JavaScript stack (frontend stuff such as HTML, CSS, JavaScript frameworks, and JavaScript in backend such as Node.js).
 
-## Open a file
+## Conclusion
 
-You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Open from**. Once opened in the workspace, any modification in the file will be automatically synced.
+These are the top 4 skills I think are important for software developers to be able to progress in their career.
 
-## Save a file
+1. Problem Solving
+2. Communication Skills
+3. Working with others
+4. Ability to learn new things
 
-You can save any file of the workspace to **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Save on**. Even if a file in the workspace is already synced, you can save it to another location. StackEdit can sync one file with multiple locations and accounts.
-
-## Synchronize a file
-
-Once your file is linked to a synchronized location, StackEdit will periodically synchronize it by downloading/uploading any modification. A merge will be performed if necessary and conflicts will be resolved.
-
-If you just have modified your file and you want to force syncing, click the **Synchronize now** button in the navigation bar.
-
-> **Note:** The **Synchronize now** button is disabled if you have no file to synchronize.
-
-## Manage file synchronization
-
-Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking **File synchronization** in the **Synchronize** sub-menu. This allows you to list and remove synchronized locations that are linked to your file.
-
-# Publication
-
-Publishing in StackEdit makes it simple for you to publish online your files. Once you're happy with a file, you can publish it to different hosting platforms like **Blogger**, **Dropbox**, **Gist**, **GitHub**, **Google Drive**, **WordPress** and **Zendesk**. With [Handlebars templates](http://handlebarsjs.com/), you have full control over what you export.
-
-> Before starting to publish, you must link an account in the **Publish** sub-menu.
-
-## Publish a File
-
-You can publish your file by opening the **Publish** sub-menu and by clicking **Publish to**. For some locations, you can choose between the following formats:
-
--   Markdown: publish the Markdown text on a website that can interpret it (**GitHub** for instance),
--   HTML: publish the file converted to HTML via a Handlebars template (on a blog for example).
-
-## Update a publication
-
-After publishing, StackEdit keeps your file linked to that publication which makes it easy for you to re-publish it. Once you have modified your file and you want to update your publication, click on the **Publish now** button in the navigation bar.
-
-> **Note:** The **Publish now** button is disabled if your file has not been published yet.
-
-## Manage file publication
-
-Since one file can be published to multiple locations, you can list and manage publish locations by clicking **File publication** in the **Publish** sub-menu. This allows you to list and remove publication locations that are linked to your file.
-
-# Markdown extensions
-
-StackEdit extends the standard Markdown syntax by adding extra **Markdown extensions**, providing you with some nice features.
-
-> **ProTip:** You can disable any **Markdown extension** in the **File properties** dialog.
-
-## SmartyPants
-
-SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
-
-|                  | ASCII                           | HTML                          |
-| ---------------- | ------------------------------- | ----------------------------- |
-| Single backticks | `'Isn't this fun?'`             | 'Isn't this fun?'             |
-| Quotes           | `"Isn't this fun?"`             | "Isn't this fun?"             |
-| Dashes           | `-- is en-dash, --- is em-dash` | -- is en-dash, --- is em-dash |
-
-## KaTeX
-
-You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):
-
-The _Gamma function_ satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral
-
-$$
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-$$
-
-> You can find more information about **LaTeX** mathematical expressions [here](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
-
-## UML diagrams
-
-You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
-
-```mermaid
-sequenceDiagram
-Alice ->> Bob: Hello Bob, how are you?
-Bob-->>John: How about you John?
-Bob--x Alice: I am good thanks!
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
-
-Bob-->Alice: Checking with John...
-Alice->John: Yes... John, how are you?
-```
-
-And this will produce a flow chart:
-
-```mermaid
-graph LR
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
-```
+All these skill can be learned and developed. Do you already have these skills? Are there other skills that need to be added in the list?

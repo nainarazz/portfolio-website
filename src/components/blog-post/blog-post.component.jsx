@@ -10,6 +10,7 @@ import {
     MorePostsContent,
     ButtonLink,
     ButtonLinkContainer,
+    ImageAttribution,
 } from './blog-post.style';
 import { NavBar } from '../layout/navbar/navbar.component';
 import { HeaderColor } from '../sections/hero/hero.style';
@@ -50,6 +51,9 @@ const BlogPost = ({ meta, children }) => {
                 <Post>
                     <Title>{meta.title}</Title>
                     {meta.src && <PostImage srcSet={meta.srcSet} src={meta.src} alt={meta.alt} />}
+                    <ImageAttribution>
+                        by {meta.imgAuthorAttribution} <i>{meta.imgAttributionUrl}</i>
+                    </ImageAttribution>
                     {children}
                 </Post>
             </PostContainer>
