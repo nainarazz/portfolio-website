@@ -51,9 +51,11 @@ const BlogPost = ({ meta, children }) => {
                 <Post>
                     <Title>{meta.title}</Title>
                     {meta.src && <PostImage srcSet={meta.srcSet} src={meta.src} alt={meta.alt} />}
-                    <ImageAttribution>
-                        by {meta.imgAuthorAttribution} <i>{meta.imgAttributionUrl}</i>
-                    </ImageAttribution>
+                    {meta.imgAuthorAttribution && (
+                        <ImageAttribution>
+                            by {meta.imgAuthorAttribution} <i>{meta.imgAttributionUrl}</i>
+                        </ImageAttribution>
+                    )}
                     {children}
                 </Post>
             </PostContainer>

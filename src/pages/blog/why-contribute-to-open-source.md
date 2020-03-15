@@ -1,0 +1,52 @@
+import BlogPost from '../../components/blog-post/blog-post.component';
+
+export const meta = {
+published: true,
+publishedAt: '2020-03-15',
+readingTime: 5,
+url: '/blog/why-contribute-to-open-source',
+title: 'Why Contribute to Open Source',
+summary: 'What are some of the benefits of contributing to open source project?',
+src: '/blog-images/why-contribute-to-open-source/opensource_w_557.gif',
+srcSet: '/blog-images/why-contribute-to-open-source/opensource_w_200.gif 200w, /blog-images/why-contribute-to-open-source/opensource_w_557.gif 557w, /blog-images/why-contribute-to-open-source/opensource_w_770.gif 770w',
+alt: 'open source',
+sizes: '',
+imgAuthorAttribution: '',
+imgAttributionUrl: ''
+};
+
+export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
+
+I believe open source has been one the best thing that has happened in software. Just imagine if open source didn’t exist. We would not have Firefox, VLC player (_my favorite video player_), VSCode, Android, Linux (_which powers the majority of servers around the world_), and many other important software we use everyday. We would have to pay a huge sum of money for most software. That sucks.
+
+But open source has changed this. We now have many free good alternatives to choose from. It is even easy to request features that we think are important. If maintainers see that it is indeed needed, they would work on it.
+
+Using open source software is awesome, but the real power comes from contributing to the project itself.
+
+What are the benefits of contributing to open source projects?
+
+### Sense of accomplishment
+
+When you contribute to an open source project, you will feel that you have completed something meaningful. Last year at this time, I contributed to an open source project called [Spectrum Chat](https://spectrum.chat/). It is a platform for creating online communities.
+
+I really loved the platform, and because it is open-source, I thought to myself, “Why can’t I contribute to this project?” I went to the project’s Github repository, forked the project, and looked for issues to work on. I did find a feature request issue, and whenever I have some time, I would work on it. It took me some weeks before my pull request was merged, but when it got merged, I was thrilled and overjoyed. I felt I have accomplished something big, and I was so proud of it even though it was just a simple modal :smile:. It is nice to see your name in the list of contributors.
+
+### Gain real world experience
+
+If you have just graduated from school without any experience, contributing to open source projects is one of your best moves. You will gain real world experience from experienced developers. You will learn how to use the tools and platforms that are being used by companies. You will learn how to write quality and that is easy to understand and maintain. In short, you will learn the skills that will make you employable in the future.
+
+### Learn to communicate effectively
+
+Most open-source projects require you to work remotely. Your main form of communication will be through writing comments in Github issues, pull requests and email. The developers may come from anywhere around the world, and you may not have a chance to talk in real time. This means that you will have to learn how to communicate your thoughts and ideas clearly.
+
+### Sharpen coding skills
+
+We can improve our coding skills by contributing to open source projects. Making a contribution to the code requires you to understand the codebase. You will need to know how to navigate in a large codebase and how the different parts work together . You will have to read the codes other people have written. By reading someone else’s code, you will see other developers’ solutions to problems. You may come across best coding practices that you haven't come across in your regular job. You may also learn how to use tools, platforms, or frameworks that you are not using at work. The benefits are many.
+
+### Make a name in the community
+
+Do you know [Kent Dodds](http://kentcdodds.com/), [Max Stoiber](https://mxstbr.com/), or [Dan Abramov](https://overreacted.io/)? If you don’t know, they are well known individuals in the JavaScript and React community. How did they get so well known in the community? They have created and contributed to many open source tools and frameworks that we JavaScript developers use everyday. If you also want to make yourself a name in the community, create something useful for the community and share it. Who knows it can be the next big thing.
+
+### Conclusion
+
+Adding code to the codebase of an open source project is just one way of contributing, but there are many other ways of contributing. Maybe you can write. Consider helping out with the project’s documentation. Do you know other languages? You can then provide translations. Do you like testing stuff? You can also give a hand on testing. Do you have money? Your donations will really help developers continue working on projects. Remember, there is nothing too small. Any good contribution will add value to someone.
