@@ -7,11 +7,11 @@ export const Container = styled.div`
     background-color: ${themeColor.mainBrand};
     background: linear-gradient(to right, ${themeColor.darkShade}, ${themeColor.mainBrand});
     width: 100%;
-    height: 100px;
+    height: 75px;
     display: flex;
     box-shadow: ${props => (props.shouldShowShadow ? '0 9px 9px -9px rgba(0, 0, 0, 0.5)' : '')};
     transition: top 0.3s;
-    top: ${props => (props.shouldHideHeader ? '-100px' : 0)};
+    top: ${props => (props.shouldHideHeader ? '-75px' : 0)};
     align-items: center;
 `;
 
@@ -21,7 +21,7 @@ export const Nav = styled.div`
     padding: 0 3rem;
     width: 100%;
     color: #fff;
-    max-width: 950px;
+    max-width: 800px;
     margin: auto;
 `;
 
@@ -46,7 +46,7 @@ export const MenuItems = styled.div`
 `;
 
 export const Item = styled.div`
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 10px 20px;
     &:hover {
         cursor: pointer;
@@ -55,7 +55,7 @@ export const Item = styled.div`
 `;
 
 export const StyledAchorTag = styled.a`
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #fff;
     text-decoration: none;
     padding: 10px;

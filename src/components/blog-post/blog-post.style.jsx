@@ -6,7 +6,7 @@ export const PostContainer = styled.div`
     position: relative;
     top: -6em;
     z-index: 10;
-    max-width: 950px;
+    max-width: 800px;
     border-radius: 8px;
     margin: auto;
     background-color: #fff;
@@ -42,7 +42,7 @@ export const MorePostsContainer = styled.div`
     width: 90%;
     position: relative;
     top: -4em;
-    max-width: 950px;
+    max-width: 800px;
     border-radius: 8px;
     margin: auto;
     background-color: #fff;

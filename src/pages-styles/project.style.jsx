@@ -6,7 +6,7 @@ export const ProjectIntroCard = styled.div`
     position: relative;
     top: -6em;
     z-index: 10;
-    max-width: 950px;
+    max-width: 800px;
     border-radius: 8px;
     margin: auto;
     background-color: #fff;
@@ -31,7 +31,7 @@ export const ProjectIntroCard = styled.div`
 
 export const Quote = styled.blockquote`
     position: relative;
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.5;
     text-align: center;
     color: ${themeColor.lightAccent};
