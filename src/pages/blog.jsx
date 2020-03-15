@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Head from 'next/head';
 import styled from 'styled-components';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { NavBar } from '../components/layout/navbar/navbar.component';
@@ -10,6 +9,8 @@ import { HorizontalCard } from '../components/horizontal-card/horizontal-card.co
 import { ProjectIntroCard, Quote } from '../pages-styles/project.style';
 import { CardWrapper } from '../pages-styles/index.style';
 import blogPosts from '../data/blog-posts';
+import { Meta } from '../components/meta/meta.component';
+import { META_BLOG } from '../meta-config';
 
 const Loader = styled.div`
     text-align: center;
@@ -28,11 +29,20 @@ function BlogPage() {
             setPosts(posts.concat(fetchedPosts));
         }, 500);
     };
+
     return (
         <>
-            <Head>
-                <title>Blog</title>
-            </Head>
+            <Meta
+                title={META_BLOG.title}
+                description={META_BLOG.description}
+                openGraph={{
+                    type: 'website',
+                    title: META_BLOG.openGraph.title,
+                    description: META_BLOG.openGraph.description,
+                    url: META_BLOG.openGraph.url,
+                    image: META_BLOG.openGraph.image,
+                }}
+            />
             <NavBar />
             <HeaderColor>
                 <div style={{ height: 90 }}></div>

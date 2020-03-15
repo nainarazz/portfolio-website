@@ -1,5 +1,4 @@
 import React from 'react';
-import Head from 'next/head';
 import MainContent from '../components/layout/main-content/main-content.component';
 import { NavBar } from '../components/layout/navbar/navbar.component';
 import {
@@ -9,7 +8,8 @@ import {
     TechContainer,
     Contact,
 } from '../pages-styles/about.style';
-import { SocialIcon } from '../components/sections/hero/hero.style';
+import { Meta } from '../components/meta/meta.component';
+import { META_ABOUT } from '../meta-config';
 
 function AboutPage() {
     const tech = [
@@ -54,11 +54,20 @@ function AboutPage() {
             imageAlt: 'sql server',
         },
     ];
+
     return (
         <>
-            <Head>
-                <title>About Me</title>
-            </Head>
+            <Meta
+                title={META_ABOUT.title}
+                description={META_ABOUT.description}
+                openGraph={{
+                    type: 'website',
+                    title: META_ABOUT.openGraph.title,
+                    description: META_ABOUT.openGraph.description,
+                    url: META_ABOUT.openGraph.url,
+                    image: META_ABOUT.openGraph.image,
+                }}
+            />
             <NavBar />
             <MainContentWrapper>
                 <MainContent>

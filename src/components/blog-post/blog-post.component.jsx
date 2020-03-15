@@ -16,6 +16,8 @@ import { NavBar } from '../layout/navbar/navbar.component';
 import { HeaderColor } from '../sections/hero/hero.style';
 import Link from 'next/link';
 import blogPosts from '../../data/blog-posts';
+import { Meta } from '../meta/meta.component';
+import { BASE_URL } from '../../constants';
 
 // https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 const shuffle = array => {
@@ -39,9 +41,17 @@ const BlogPost = ({ meta, children }) => {
 
     return (
         <>
-            <Head>
-                <title>{meta.title}</title>
-            </Head>
+            <Meta
+                title={meta.title}
+                description={meta.summary}
+                openGraph={{
+                    type: 'article',
+                    title: meta.title,
+                    description: meta.summary,
+                    url: `${BASE_URL}${meta.url}`,
+                    image: meta.src,
+                }}
+            />
             <NavBar />
             <HeaderColor>
                 <div style={{ height: 90 }}></div>

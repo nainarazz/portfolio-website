@@ -1,19 +1,28 @@
 /* eslint-disable react/self-closing-comp */
 import React from 'react';
-import Head from 'next/head';
 import { NavBar } from '../components/layout/navbar/navbar.component';
 import { HeaderColor } from '../components/sections/hero/hero.style';
 import MainContent from '../components/layout/main-content/main-content.component';
 import { HorizontalCard } from '../components/horizontal-card/horizontal-card.component';
 import { ProjectIntroCard, Quote, TechChips, SubTitleLink } from '../pages-styles/project.style';
 import { projects } from '../data/project';
+import { Meta } from '../components/meta/meta.component';
+import { META_PROJECT } from '../meta-config';
 
 function ProjectPage() {
     return (
         <>
-            <Head>
-                <title>Projects</title>
-            </Head>
+            <Meta
+                title={META_PROJECT.title}
+                description={META_PROJECT.description}
+                openGraph={{
+                    type: 'website',
+                    title: META_PROJECT.openGraph.title,
+                    description: META_PROJECT.openGraph.description,
+                    url: META_PROJECT.openGraph.url,
+                    image: META_PROJECT.openGraph.image,
+                }}
+            />
             <NavBar />
             <HeaderColor>
                 <div style={{ height: 90 }}></div>

@@ -36,10 +36,6 @@ export default class MyDocument extends Document {
                     {this.props.styles}
                     <meta charSet="utf-8" />
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                    <meta
-                        name="description"
-                        content="A personal blog dedicated to web technologies and Javascript"
-                    />
                     <meta name="theme-color" content="#ad5389" />
                     <link rel="manifest" href="/manifest.json" />
                     <link rel="shortcut icon" href="/favicon.ico" />
