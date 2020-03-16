@@ -1,7 +1,7 @@
 const sitemap = require('nextjs-sitemap-generator');
 sitemap({
     baseUrl: 'https://nainacodes.com',
-    pagesDirectory: __dirname + '/pages',
-    targetDirectory: '/',
+    pagesDirectory: __dirname + '/src/pages',
+    targetDirectory: __dirname + '/public',
     ignoredExtensions: ['png', 'jpg', 'gif'],
 });
