@@ -1,5 +1,7 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
+import { MDXProvider } from '@mdx-js/react';
+import { CodeBlock } from '../components/code-block/code-block.component';
 
 const GlobalStyle = createGlobalStyle`
     body {
@@ -19,12 +21,19 @@ const GlobalStyle = createGlobalStyle`
     }
 `;
 
+const components = {
+    pre: props => <div {...props} />,
+    code: CodeBlock,
+};
+
 // eslint-disable-next-line react/prop-types
 function MyApp({ Component, pageProps }) {
     return (
         <>
             <GlobalStyle />
-            <Component {...pageProps} />
+            <MDXProvider components={components}>
+                <Component {...pageProps} />
+            </MDXProvider>
         </>
     );
 }
