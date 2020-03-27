@@ -29,7 +29,7 @@ What are the benefits of contributing to open source projects?
 
 When you contribute to an open source project, you will feel that you have completed something meaningful. Last year at this time, I contributed to an open source project called [Spectrum Chat](https://spectrum.chat/). It is a platform for creating online communities.
 
-I really loved the platform, and because it is open-source, I thought to myself, “Why can’t I contribute to this project?” I went to the project’s Github repository, forked the project, and looked for issues to work on. I did find a feature request issue, and whenever I have some time, I would work on it. It took me some weeks before my pull request was merged, but when it got merged, I was thrilled and overjoyed. I felt I have accomplished something big, and I was so proud of it even though it was just a simple modal :smile:. It is nice to see your name in the list of contributors.
+I really loved the platform, and because it is open-source, I thought to myself, “Why can’t I contribute to this project?” I went to the project’s Github repository, forked the project, and looked for issues to work on. I did find a feature request issue, and whenever I have some time, I would work on it. It took me some weeks before my pull request was merged, but when it got merged, I was thrilled and overjoyed. I felt I have accomplished something big, and I was so proud of it even though it was just a simple modal 😁. It is nice to see your name in the list of contributors.
 
 ### Gain real world experience
 
