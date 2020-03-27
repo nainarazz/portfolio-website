@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import { themeColor } from '../../themes/colors';
 
 export const PostContainer = styled.div`
-    width: 90%;
+    width: 95%;
     position: relative;
     top: -6em;
     z-index: 10;
@@ -18,9 +17,9 @@ export const PostContainer = styled.div`
 `;
 
 export const Post = styled.div`
-    line-height: 1.7;
-    padding: 1rem 2rem;
-    text-align: justify;
+    line-height: 1.85;
+    padding: 1rem;
+    text-align: left;
 `;
 
 export const Title = styled.h2`
@@ -28,7 +27,7 @@ export const Title = styled.h2`
 `;
 
 export const PostImage = styled.img`
-    max-width: 50%;
+    max-width: 70%;
     display: block;
     margin: auto;
 `;
@@ -39,7 +38,7 @@ export const ImageAttribution = styled.div`
 `;
 
 export const MorePostsContainer = styled.div`
-    width: 90%;
+    width: 95%;
     position: relative;
     top: -4em;
     max-width: 800px;
