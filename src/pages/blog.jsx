@@ -11,6 +11,7 @@ import { CardWrapper } from '../pages-styles/index.style';
 import blogPosts from '../data/blog-posts';
 import { Meta } from '../components/meta/meta.component';
 import { META_BLOG } from '../meta-config';
+import { formatDate } from '../utilities/format-date';
 
 const Loader = styled.div`
     text-align: center;
@@ -70,7 +71,7 @@ function BlogPage() {
                         <Link href={post.path} key={index}>
                             <CardWrapper>
                                 <HorizontalCard
-                                    subTitle={post.publishedAt}
+                                    subTitle={formatDate(new Date(post.publishedAt))}
                                     title={post.title}
                                     photoUrl={post.src}
                                     photoAlt={post.alt}

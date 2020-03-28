@@ -9,6 +9,7 @@ import { StyledHeading, StyledLink, CardWrapper } from '../pages-styles/index.st
 import blogPosts from '../data/blog-posts';
 import { Meta } from '../components/meta/meta.component';
 import { META_HOME } from '../meta-config';
+import { formatDate } from '../utilities/format-date';
 
 function HomePage() {
     return (
@@ -32,7 +33,7 @@ function HomePage() {
                     <Link href={post.path} key={index}>
                         <CardWrapper>
                             <HorizontalCard
-                                subTitle={post.publishedAt}
+                                subTitle={formatDate(new Date(post.publishedAt))}
                                 photoAlt={post.alt}
                                 title={post.title}
                                 srcSet={post.srcSet}
