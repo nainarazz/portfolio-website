@@ -21,9 +21,9 @@ React hooks are the new way of accessing React features in a React component. We
 
 While React hooks don't completely replace class based React components, they allow us to write cleaner and more reusable components by writing smaller composable components.
 
-In this post, I’m going to show you how to use the basic React hooks using TypeScript and how to create your own hooks. TypeScript will add types to our code. Typed code has many advantages, but one of the great advantages is that it adds a nice auto completion to our code editor, which makes writing code faster and comfortable.
+In this post, I’m going to show you how to **use the basic React hooks** using TypeScript and how to **create your own hooks**. TypeScript will add types to our code. Typed code has many advantages, but one of the great advantages is that it adds a nice auto completion to our code editor, which makes writing code faster and comfortable.
 
-Hooks are simply JavaScript functions, but they need to abide with two rules:
+Hooks are simply JavaScript functions, but they need to abide to two rules:
 
 1.  Only call hooks at the top level. Do not call them inside loops, conditions, or nested functions.
 2.  Only call hooks from React functions. You should not call them from regular JavaScript functions.
@@ -54,11 +54,11 @@ const Person: React.FunctionComponent<Person> = props => {
 };
 ```
 
-The useState function accepts the initial state as its argument. It returns an array of values which is the state and the function to update the state. We use ES6 array destructuring to get those values. By convention, we name the updater function by prefixing the state name with the word _set_.
+The useState function accepts the initial state as its argument. It returns an array of values which is the state and the function to update the state. We use ES6 array destructuring to get those values. By convention, we name the updater function by prefixing the state name with the word `set`.
 
 ### Reading values
 
-To read the state value from hooks, we just access the destructured variable directly. Using the above example, we could do:
+To read the state value from hooks, we just access the destructured variable directly. Using the example above, we could do:
 
 ```jsx
 <div>First Name: {person.firstName}</div>
@@ -143,10 +143,10 @@ const someExpensiveOperation = (): Person => {
     };
 };
 
-const [person, setPerson] = useState < Person > someExpensiveOperation();
+const [person, setPerson] = useState<Person>(someExpensiveOperation());
 ```
 
-Whenever there is a re-render, the `someExpensiveOperation()` will always be called, which is not what we really want. To avoid this, we can initialize the state lazily by providing a function as argument, and it will only be called once in the initial render.
+Whenever there is a re-render, the `someExpensiveOperation()` will always be called, which is not what we really want. To avoid this, we can initialize the state lazily by providing a function as argument, and it will only be called once on the initial render.
 
 ```typescript
 const [person, setPerson] = useState<Person>(() => someExpensiveOperation());
@@ -162,14 +162,11 @@ If you have used React class lifecycle methods before, `useEffect` hook is like 
 import React, { useState, useEffect, ChangeEvent } from 'react';
 
 const Person: React.FunctionComponent<Person> = props => {
-    const [person, setPerson] =
-        useState <
-        Person >
-        {
-            firstName: 'John',
-            lastName: 'Warren',
-            age: 24,
-        };
+    const [person, setPerson] = useState<Person>({
+        firstName: 'John',
+        lastName: 'Warren',
+        age: 24,
+    });
 
     const celebrateBirthday = (event: React.MouseEvent) => {
         setPerson({
@@ -221,7 +218,7 @@ Here is a simple example of custom hook. It returns the state of whether a modal
 
 ```typescript
 export const useModal = () => {
-    const [isShown, setIsShown] = useState < boolean > false;
+    const [isShown, setIsShown] = useState<boolean>(false);
     const toggle = () => setIsShown(!isShown);
     return {
         isShown,
