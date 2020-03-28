@@ -2,7 +2,7 @@ import BlogPost from '../../components/blog-post/blog-post.component';
 
 export const meta = {
 published: true,
-publishedAt: '2020-03-26',
+publishedAt: '2020-03-29',
 readingTime: 7,
 url: '/blog/basic-react-hooks-using-typescript',
 title: 'Basic React Hooks using TypeScript - useState, useEffect',

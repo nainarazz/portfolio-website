@@ -2,7 +2,7 @@ import BlogPost from '../../components/blog-post/blog-post.component';
 
 export const meta = {
 published: true,
-publishedAt: '2020-03-15',
+publishedAt: '2020-03-18',
 readingTime: 5,
 url: '/blog/why-contribute-to-open-source',
 title: 'Why Contribute to Open Source',
