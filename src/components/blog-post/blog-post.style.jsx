@@ -20,6 +20,12 @@ export const Post = styled.div`
     line-height: 1.85;
     padding: 1rem;
     text-align: left;
+
+    code {
+        background: #f4f3fa;
+        padding: 3px;
+        font-style: italic;
+    }
 `;
 
 export const Title = styled.h2`
