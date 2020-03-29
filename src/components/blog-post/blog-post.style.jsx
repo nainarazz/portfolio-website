@@ -23,6 +23,10 @@ export const Post = styled.div`
         padding: 3px;
         font-style: italic;
     }
+
+    a {
+        text-decoration: none;
+    }
 `;
 
 export const Title = styled.h2`
