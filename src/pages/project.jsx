@@ -24,18 +24,13 @@ function ProjectPage() {
                 }}
             />
             <NavBar />
-            <HeaderColor>
-                <div style={{ height: 90 }}></div>
-            </HeaderColor>
 
             <ProjectIntroCard>
-                <div style={{ padding: '1em' }}>
-                    <Quote>
-                        If you can’t fly then run, if you can’t run then walk, if you can’t walk
-                        then crawl, but whatever you do you have to keep moving forward.
-                        <footer>Martin Luther King Jr.</footer>
-                    </Quote>
-                </div>
+                <Quote>
+                    If you can’t fly then run, if you can’t run then walk, if you can’t walk then
+                    crawl, but whatever you do you have to keep moving forward.
+                    <footer>Martin Luther King Jr.</footer>
+                </Quote>
             </ProjectIntroCard>
 
             <MainContent>

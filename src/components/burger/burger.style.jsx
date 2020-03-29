@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { themeColor } from '../../themes/colors';
 
 export const StyledBurger = styled.button`
     display: flex;
@@ -21,7 +22,7 @@ export const StyledBurger = styled.button`
     div {
         width: 2rem;
         height: 0.2rem;
-        background: #fff;
+        background: ${({ open }) => (open ? '#fff' : themeColor.mainBrand)};
         border-radius: 10px;
         transition: all 0.3s linear;
         position: relative;

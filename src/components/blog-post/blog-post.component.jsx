@@ -52,9 +52,6 @@ const BlogPost = ({ meta, children }) => {
                 }}
             />
             <NavBar />
-            <HeaderColor>
-                <div style={{ height: 90 }}></div>
-            </HeaderColor>
 
             <PostContainer>
                 <Post>

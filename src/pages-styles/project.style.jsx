@@ -3,14 +3,11 @@ import { themeColor } from '../themes/colors';
 
 export const ProjectIntroCard = styled.div`
     width: 90%;
-    position: relative;
-    top: -6em;
-    z-index: 10;
     max-width: 800px;
     border-radius: 8px;
-    margin: auto;
+    margin: 100px auto;
+    margin-bottom: 50px;
     background-color: #fff;
-    box-shadow: 0 0.15rem 0.9rem rgba(38, 50, 56, 0.2);
 
     h1 {
         text-align: center;

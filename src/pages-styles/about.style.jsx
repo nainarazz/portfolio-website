@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MainContentWrapper = styled.div`
-    padding-top: 150px;
+    padding-top: 80px;
 `;
 
 export const Text = styled.p`

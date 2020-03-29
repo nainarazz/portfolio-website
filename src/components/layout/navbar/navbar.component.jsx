@@ -33,7 +33,7 @@ export const NavBar = () => {
                 <Nav>
                     <Link href="/">
                         <Logo>
-                            <img src="/static/images/logo.png" alt="" />
+                            <img src="/logo.svg" alt="" />
                         </Logo>
                     </Link>
                     <MenuItems>
