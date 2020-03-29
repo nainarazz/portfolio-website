@@ -3,7 +3,7 @@
     "short_name": "NR",
     "icons": [
         {
-            "src": "/icons/favicon_512x512.png",
+            "src": "/icons/favicon_512x512.ico",
             "sizes": "48x48 96x96 128x128 256x256 512x512"
         }
     ],
