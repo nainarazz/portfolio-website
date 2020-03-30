@@ -238,3 +238,5 @@ const { isShown, toggle } = useModal();
 These are the most basic React hooks, but there are many other hooks for different use cases that React provides to us. I will be discussing them in another post.
 
 So , if you want to use state inside a functional component, you can use the `useState` hook. If you want to perform side effects, you can use the `useEffect` hook. You can also create your own custom hooks if these doesn't meet your needs.
+
+Send in your thoughts, comments, and feedback on [this post on DEV](https://dev.to/nainarazz/basic-react-hooks-using-typescript-usestate-useeffect-58g0).
