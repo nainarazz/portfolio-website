@@ -9,7 +9,7 @@ export const META_HOME = {
         description:
             "Hi, I'm Naina Razafindrabiby. I build stuff for the web using JavaScript and web technologies.",
         url: `${BASE_URL}`,
-        image: '/static/logo.png',
+        image: '/logo-675x200.jpg',
     },
 };
 
@@ -22,7 +22,7 @@ export const META_ABOUT = {
         description:
             'A full stack developer who specializes in JavaScript technologies across the stack (Angular, React, Node.js). Passionate in designing and creating modern software using open-source and web technologies.',
         url: `${BASE_URL}/about`,
-        image: '/static/logo.png',
+        image: '/logo-675x200.jpg',
     },
 };
 
@@ -33,7 +33,7 @@ export const META_BLOG = {
         title: 'Blog',
         description: 'Personal blog on JavaScript, frontend, web technologies',
         url: `${BASE_URL}/blog`,
-        image: '/static/logo.png',
+        image: '/logo-675x200.jpg',
     },
 };
 
@@ -44,6 +44,6 @@ export const META_PROJECT = {
         title: 'Projects',
         description: 'Side projects',
         url: `${BASE_URL}/project`,
-        image: '/static/logo.png',
+        image: '/logo-675x200.jpg',
     },
 };
